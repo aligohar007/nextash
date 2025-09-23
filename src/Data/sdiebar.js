@@ -12,10 +12,10 @@ export const sidebarData = {
   ],
 
   policies: [
-    { label: "Terms And Conditions", href: "#" },
-    { label: "Privacy Policy", href: "#" },
-    { label: "Cookies Policy", href: "#" },
-    { label: "Refund Policy", href: "#" },
+    { label: "Terms And Conditions", to: "/termcondition" , type : "router" , click: "goToprivacy" },
+    { label: "Privacy Policy", to: "/termcondition" , type : "router" , click: "goToprivacy" },
+    { label: "Cookies Policy", to: "/termcondition" , type : "router" , click: "goToprivacy" },
+    { label: "Refund Policy", to: "/termcondition" , type : "router" , click: "goToprivacy" },
   ],
 
   socials: [

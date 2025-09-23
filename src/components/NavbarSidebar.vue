@@ -7,14 +7,10 @@
         <h3 class="font-semibold text-[1.3rem] lg:text-[1.5rem] mb-3 -mt-20 lg:mt-14 md:mt-10">Navigate</h3>
         <ul class="text-gray-300 text-[2rem] lg:text-[2.3rem] menu-list">
           <li v-for="(item, index) in sidebarData.navigate" :key="index" class="flex items-center gap-2">
-            
+
             <!-- router link -->
-            <router-link
-              v-if="item.type === 'router'"
-              :to="item.to"
-              class="list-link list-item"
-              @click="handleClick(item.click)"
-            >
+            <router-link v-if="item.type === 'router'" :to="item.to" class="list-link list-item"
+              @click="handleClick(item.click)">
               {{ item.label }}
             </router-link>
 
@@ -35,9 +31,12 @@
           <h3 class="font-semibold text-[1.4rem] mb-4">Policies</h3>
           <ul class="space-y-2 text-[#ACB6C0] text-[1.1rem]">
             <li v-for="(policy, index) in sidebarData.policies" :key="index">
-              <a :href="policy.href" class="hover:text-white hover:underline decoration-red-500">
+
+              <RouterLink v-if="policy.type === 'router'" :to="policy.to"
+               @click="handleClick(policy.click)"
+                class="hover:text-white hover:underline decoration-red-500">
                 {{ policy.label }}
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </div>
@@ -47,11 +46,11 @@
           <h3 class="font-semibold text-[1.3rem] mb-3 -mt-3">Follow us</h3>
           <div class="flex items-center  gap-1 border rounded-full max-w-[250px] border-gray-800 p-2">
             <a v-for="(social, index) in socialLinks" :key="index" :href="social.href" target="_blank"
-               :class="social.icon"
+              :class="social.icon"
               class="w-9 h-9 flex items-center justify-center rounded-full bg-[#1A1A1A] hover:bg-red-800 text-gray-300 hover:text-white social-icon">
-              
+
             </a>
-             
+
           </div>
         </div>
       </div>
@@ -81,13 +80,13 @@ const methods = {
   goToContact: () => { router.push("/contact"); emit("closeMenu"); },
   goTocareers: () => { router.push("/careers"); emit("closeMenu"); },
   goToBlogs: () => { router.push("/blog"); emit("closeMenu"); },
+  goToprivacy:() =>{router.push("/termcondition"); emit("closeMenu"); }
 };
 
 </script>
 
- 
-<style scoped>
 
+<style scoped>
 .menu-list {
   counter-reset: menu;
 }
@@ -127,14 +126,15 @@ const methods = {
 .list-link:hover .icon {
   color: var(--text)
 }
+
 .social-icon {
   font-size: 1.2rem;
   color: #ccc;
   transition: 0.3s;
   display: flex;
 }
+
 .social-icon:hover {
   color: white;
 }
-
-</style> 
+</style>

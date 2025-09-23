@@ -9,6 +9,7 @@ import OurProjects from '../src/Projectspage/OurProjects.vue'
 import Contact from '../src/Contactpage/Contact.vue'
 import Careerspage from '../src/careers/Careerspage.vue'
 import Latestblog from '../src/Blogpage/Latestblog.vue'
+import TermCondition from '../src/Policespage/Term&Condition.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -26,6 +27,10 @@ const routes = [
    {
       path : '/blog' , name : 'blog' , component : Latestblog,
        meta: { hideCTA: true }
+  },
+  {
+     path : '/termcondition' , name : 'termcondition' , component : TermCondition,
+      meta : {hideCTA:true}
   },
 ]
 
