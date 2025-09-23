@@ -1,5 +1,5 @@
 <template>
-    <div class=" text-gray-300 px-15 leading-relaxed">
+    <div class=" text-gray-300 px-10 -mt-10 lg:-mt-0 lg:px-15 leading-relaxed">
         <div v-for="(block, index) in termsData" :key="index" class="mb-3">
 
             <!-- Heading -->
