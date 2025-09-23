@@ -1,14 +1,14 @@
 <template>
-    <div class=" text-gray-300 px-10 -mt-10 lg:-mt-0 lg:px-15 leading-relaxed mb-30">
+    <div class=" text-gray-300 px-10 -mt-10 lg:-mt-0 lg:px-15 leading-relaxed lg:mb-30">
         <div v-for="(block, index) in termsData" :key="index" class="mb-3">
 
             <!-- Heading -->
-            <h2 v-if="block.type === 'heading'" class="dotted-square -mt-2 ">
+            <h2 v-if="block.type === 'heading'" class="dotted-square ">
                 {{ block.text }}
             </h2>
 
             <!-- Paragraph -->
-            <p v-else-if="block.type === 'paragraph'" class="text-[1.2rem] text-[#ACB6C0] mb-5"
+            <p v-else-if="block.type === 'paragraph'" class="text-[1.2rem] text-[#ACB6C0]  "
                 >
                 <span v-if="!block.html">{{ block.text }}</span>
             </p>
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import { termsData } from "../../src/Data/termdata";
+import { termsData } from "../../src/Data/privacy";
 
 export default {
     name: "Terms",

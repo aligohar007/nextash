@@ -80,7 +80,8 @@ const methods = {
   goToContact: () => { router.push("/contact"); emit("closeMenu"); },
   goTocareers: () => { router.push("/careers"); emit("closeMenu"); },
   goToBlogs: () => { router.push("/blog"); emit("closeMenu"); },
-  goToprivacy:() =>{router.push("/termcondition"); emit("closeMenu"); }
+  goToprivacy:() =>{router.push("/termcondition"); emit("closeMenu"); },
+  goToscrit:() =>{router.push("/privacy"); emit("closeMenu"); }
 };
 
 </script>

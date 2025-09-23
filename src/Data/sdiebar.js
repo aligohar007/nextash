@@ -13,9 +13,9 @@ export const sidebarData = {
 
   policies: [
     { label: "Terms And Conditions", to: "/termcondition" , type : "router" , click: "goToprivacy" },
-    { label: "Privacy Policy", to: "/termcondition" , type : "router" , click: "goToprivacy" },
-    { label: "Cookies Policy", to: "/termcondition" , type : "router" , click: "goToprivacy" },
-    { label: "Refund Policy", to: "/termcondition" , type : "router" , click: "goToprivacy" },
+    { label: "Privacy Policy", to: "/privacy" , type : "router" , click: "goToscrit" },
+    { label: "Cookies Policy", to: "/privacy" , type : "router" , click: "goToscrit" },
+    { label: "Refund Policy", to: "/privacy" , type : "router" , click: "goToscrit" },
   ],
 
   socials: [
