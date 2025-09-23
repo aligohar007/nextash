@@ -118,8 +118,8 @@ export const leadershipcontent = [
     },
     {
         image: img10,
-        name: "Abdullah Arshad",
-        jobtitle: "Chief Operating Officer (COO)",
+        name: "Khawar Ali",
+        jobtitle: "UI/UX Developer",
         aos: {
             "data-aos": "zoom-in",
             "data-aos-duration": "1000",
@@ -129,8 +129,8 @@ export const leadershipcontent = [
     },
     {
         image: img11,
-        name: "Tania Nawaz",
-        jobtitle: "Chief Innovation Officer (CIO)",
+        name: "Irshad Bibi",
+        jobtitle: "HOD Mobile",
         aos: {
             "data-aos": "zoom-in",
             "data-aos-duration": "1000",
@@ -140,8 +140,8 @@ export const leadershipcontent = [
     },
     {
         image: img12,
-        name: "Shahid Mehmood",
-        jobtitle: "Chief Technology Officer (CTO)",
+        name: "Irfa Mohsin",
+        jobtitle: "HOD Marketing",
         aos: {
             "data-aos": "zoom-in",
             "data-aos-duration": "1000",
@@ -151,8 +151,8 @@ export const leadershipcontent = [
     },
     {
         image: img13,
-        name: "Abdullah Arshad",
-        jobtitle: "Chief Operating Officer (COO)",
+        name: "Ammar Shahid",
+        jobtitle: "HOD UI/UX Designer",
         aos: {
             "data-aos": "zoom-in",
             "data-aos-duration": "1000",
@@ -162,8 +162,8 @@ export const leadershipcontent = [
     },
     {
         image: img14,
-        name: "Tania Nawaz",
-        jobtitle: "Chief Innovation Officer (CIO)",
+        name: "Manahil Mudaser",
+        jobtitle: "Functional Analyst",
         aos: {
             "data-aos": "zoom-in",
             "data-aos-duration": "1000",
@@ -173,8 +173,8 @@ export const leadershipcontent = [
     },
     {
         image: img15,
-        name: "Shahid Mehmood",
-        jobtitle: "Chief Technology Officer (CTO)",
+        name: "Muzamil Hussain",
+        jobtitle: "Network Engineer",
         aos: {
             "data-aos": "zoom-in",
             "data-aos-duration": "1000",
@@ -182,72 +182,7 @@ export const leadershipcontent = [
             "data-aos-easing": "ease-in-out",
         }
     },
-    {
-        image: img1,
-        name: "Abdullah Arshad",
-        jobtitle: "Chief Operating Officer (COO)",
-        aos: {
-            "data-aos": "zoom-in",
-            "data-aos-duration": "1000",
-            "data-aos-once": "true",
-            "data-aos-easing": "ease-in-out",
-        }
-    },
-    {
-        image: img2,
-        name: "Tania Nawaz",
-        jobtitle: "Chief Innovation Officer (CIO)",
-        aos: {
-            "data-aos": "zoom-in",
-            "data-aos-duration": "1000",
-            "data-aos-once": "true",
-            "data-aos-easing": "ease-in-out",
-        }
-    },
-    {
-        image: img3,
-        name: "Shahid Mehmood",
-        jobtitle: "Chief Technology Officer (CTO)",
-        aos: {
-            "data-aos": "zoom-in",
-            "data-aos-duration": "1000",
-            "data-aos-once": "true",
-            "data-aos-easing": "ease-in-out",
-        }
-    },
-    {
-        image: img1,
-        name: "Abdullah Arshad",
-        jobtitle: "Chief Operating Officer (COO)",
-        aos: {
-            "data-aos": "zoom-in",
-            "data-aos-duration": "1000",
-            "data-aos-once": "true",
-            "data-aos-easing": "ease-in-out",
-        }
-    },
-    {
-        image: img2,
-        name: "Tania Nawaz",
-        jobtitle: "Chief Innovation Officer (CIO)",
-        aos: {
-            "data-aos": "zoom-in",
-            "data-aos-duration": "1000",
-            "data-aos-once": "true",
-            "data-aos-easing": "ease-in-out",
-        }
-    },
-    {
-        image: img3,
-        name: "Shahid Mehmood",
-        jobtitle: "Chief Technology Officer (CTO)",
-        aos: {
-            "data-aos": "zoom-in",
-            "data-aos-duration": "1000",
-            "data-aos-once": "true",
-            "data-aos-easing": "ease-in-out",
-        }
-    },
+    
 ]
 
 

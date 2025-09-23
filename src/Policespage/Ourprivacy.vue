@@ -8,14 +8,14 @@
             </h2>
 
             <!-- Paragraph -->
-            <p v-else-if="block.type === 'paragraph'" class="text-[1.2rem] text-[#ACB6C0]  "
+            <p v-else-if="block.type === 'paragraph'" class="text-[1.2rem] text-[#ACB6C0]"
                 >
                 <span v-if="!block.html">{{ block.text }}</span>
             </p>
 
             <!-- List -->
             <div v-else-if="block.type === 'list'">
-                <p v-if="block.title" class="text-[#ACB6C0] text-[1.3rem]  ">
+                <p v-if="block.title" class="text-[#ACB6C0] text-[1.3rem]">
                     {{ block.title }}
                 </p>
                 <ul class="list-disc  text-[#ACB6C0] text-[1.2rem] space-y-2 ">
