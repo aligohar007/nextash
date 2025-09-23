@@ -128,58 +128,56 @@
         </svg>
     </div>
 
-    <div class=" w-[90%] mx-auto text-white  flex justify-center ">
-        <div class=" card  relative  border border-gray-700 rounded-xl p-8 text-center">
-
-            <!-- Quote Icon -->
-            <div class="absolute top-0 left-0 text-red-600 text-[2rem]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-                    <path fill="currentColor"
-                        d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789M20 20h-6a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2" />
-                </svg>
-            </div>
-
-            <!-- Testimonial Text -->
-            <p class="mb-8 text-gray-300 mt-10  lg:mt-15 px-10">
-                {{ testimonials[currentIndex].quote }}
-            </p>
-
-            <!-- User Image -->
-            <div class="flex justify-center mb-4">
-                <img :src="testimonials[currentIndex].image" alt="user"
-                    class="w-20 h-20  p-1 rounded-xl border-2 border-red-600 object-cover" />
-            </div>
-
-            <!-- User Name & Role -->
-            <h3 class="text-lg font-bold">{{ testimonials[currentIndex].name }}</h3>
-            <p class="text-gray-400 mb-4">{{ testimonials[currentIndex].role }}</p>
-
-            <!-- Stars -->
-            <div class="flex justify-center text-yellow-300 text-xl gap-1 mb-10 mt-5 ">
-                <span v-for="i in 5" :key="i">★</span>
-            </div>
-
-            <!-- Arrows -->
-            <div class="absolute left-0 top-1/2 -transparent-y-1/2 bg-red-600 text-white p-3 rounded-full cursor-pointer"
-                @click="prevSlide">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="1.5" d="M20 12H4m0 0l6-6m-6 6l6 6" />
-                </svg>
-            </div>
-
-            <div class="absolute right-0 top-1/2 -translate-y-1/2 bg-red-600 hover:bg-black  text-white p-3 rounded-full cursor-pointer"
-                @click="nextSlide">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                    <g fill="none">
-                        <path
-                            d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+    <div class="w-[90%] mx-auto text-white relative overflow-hidden ">
+        <!-- Slider wrapper -->
+        <div class="flex transition-transform duration-400 ease-in-out "
+            :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+            <!-- Single Card -->
+            <div v-for="(item, index) in testimonials" :key="index"
+                class="min-w-full flex-shrink-0 p-8 border border-gray-700 rounded-xl text-center card">
+                <div class="absolute top-0 left-0 text-red-600 text-[2rem]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
                         <path fill="currentColor"
-                            d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
-                    </g>
-                </svg>
-            </div>
+                            d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789M20 20h-6a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2" />
+                    </svg>
+                </div>
+                <p class="mb-8 text-gray-300 mt-10 lg:mt-20 px-10">
+                    {{ item.quote }}
+                </p>
 
+                <div class="flex justify-center mb-4">
+                    <img :src="item.image" alt="user"
+                        class="w-20 h-20 p-1 rounded-xl border-2 border-red-600 object-cover" />
+                </div>
+
+                <h3 class="text-lg font-bold">{{ item.name }}</h3>
+                <p class="text-gray-400 mb-4">{{ item.role }}</p>
+
+                <div class="flex justify-center text-yellow-300 text-xl gap-1 mb-10 mt-5">
+                    <span v-for="i in 5" :key="i">★</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prev Button -->
+        <div class="absolute left-0 top-1/2 -transparent-y-1/2 bg-red-600 text-white p-3 rounded-full cursor-pointer"
+            @click="prevSlide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5" d="M20 12H4m0 0l6-6m-6 6l6 6" />
+            </svg>
+        </div>
+
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 bg-red-600 hover:bg-black  text-white p-3 rounded-full cursor-pointer"
+            @click="nextSlide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <g fill="none">
+                    <path
+                        d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                    <path fill="currentColor"
+                        d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
+                </g>
+            </svg>
         </div>
     </div>
 
@@ -197,7 +195,8 @@
                         <span class="text-[var(--primary)] font-bold text-2xl">}</span>
                     </span>
 
-                    <h2 class="card-title text-[1.6rem] px-1 mb-4 lg:mb-0 lg:text-[3rem] font-semibold mt-2">Future - Community - Honor</h2>
+                    <h2 class="card-title text-[1.6rem] px-1 mb-4 lg:mb-0 lg:text-[3rem] font-semibold mt-2">Future -
+                        Community - Honor</h2>
                     <p class="text-[1rem] mb-5 text-[#ACB6C0] font-semibold px-5">
                         What sets us apart is what brings us together – a shared passion for solving business challenges
                         through strategy, design, and engineering. We are the sum total of our team, their unique
@@ -207,9 +206,9 @@
             </div>
         </div>
     </section>
-      <OurBenefits/>
+    <OurBenefits />
 </template>
-   
+
 <script setup>
 import { ref } from "vue"
 import OurBenefits from "./OurBenefits.vue"
@@ -246,7 +245,8 @@ const nextSlide = () => {
 
 const prevSlide = () => {
     currentIndex.value =
-        (currentIndex.value - 1 + testimonials.value.length) % testimonials.value.length
+        (currentIndex.value - 1 + testimonials.value.length) %
+        testimonials.value.length
 }
 </script>
 
