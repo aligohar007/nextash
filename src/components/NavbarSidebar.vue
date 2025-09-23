@@ -81,7 +81,8 @@ const methods = {
   goTocareers: () => { router.push("/careers"); emit("closeMenu"); },
   goToBlogs: () => { router.push("/blog"); emit("closeMenu"); },
   goToprivacy:() =>{router.push("/termcondition"); emit("closeMenu"); },
-  goToscrit:() =>{router.push("/privacy"); emit("closeMenu"); }
+  goToscrit:() =>{router.push("/privacy"); emit("closeMenu"); },
+  goTocookies:()=>{router.push("/cookies"); emit("closeMenu");},
 };
 
 </script>

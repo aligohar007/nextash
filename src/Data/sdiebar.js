@@ -14,7 +14,7 @@ export const sidebarData = {
   policies: [
     { label: "Terms And Conditions", to: "/termcondition" , type : "router" , click: "goToprivacy" },
     { label: "Privacy Policy", to: "/privacy" , type : "router" , click: "goToscrit" },
-    { label: "Cookies Policy", to: "/privacy" , type : "router" , click: "goToscrit" },
+    { label: "Cookies Policy", to: "/cookies" , type : "router" , click: "goTocookies" },
     { label: "Refund Policy", to: "/privacy" , type : "router" , click: "goToscrit" },
   ],
 
