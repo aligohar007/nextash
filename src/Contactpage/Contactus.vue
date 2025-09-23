@@ -39,8 +39,9 @@
             <textarea v-else :placeholder="field.placeholder" :required="field.required"
               class="w-full bg-[#1B1A1A] text-white border border-[#353434] rounded-md px-4 py-3 h-28 focus:outline-none"></textarea>
           </template>
-
-          <router-link to='/about' class="btn-outline mt-8">Send message</router-link>
+           <div class="flex justify-center">
+          <router-link to='/about' class="btn-outline mt-4 ">Send message</router-link>
+           </div>
         </form>
         <!-- End form -->
       </div>

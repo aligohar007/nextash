@@ -2,18 +2,15 @@
     <div class=" text-gray-300 px-10 -mt-10 lg:-mt-0 lg:px-15 leading-relaxed lg:mb-30">
         <div v-for="(block, index) in termsData" :key="index" class="mb-3">
 
-            <!-- Heading -->
             <h2 v-if="block.type === 'heading'" class="dotted-square ">
                 {{ block.text }}
             </h2>
 
-            <!-- Paragraph -->
             <p v-else-if="block.type === 'paragraph'" class="text-[1.2rem] text-[#ACB6C0]"
                 >
                 <span v-if="!block.html">{{ block.text }}</span>
             </p>
 
-            <!-- List -->
             <div v-else-if="block.type === 'list'">
                 <p v-if="block.title" class="text-[#ACB6C0] text-[1.3rem]">
                     {{ block.title }}

@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// Pages import
 import Home from '../src/Pages/Home.vue'
 import About from '../src/Aboutpage/About.vue'
 import Services from '../src/Servicespage/Services.vue'
@@ -19,28 +18,30 @@ const routes = [
   { path: '/services', name: 'Services', component: Services },
   { path: '/ourteam', name: 'OurTeam', component: OurTeam },
   { path: '/ourprojects', name: 'OurProjects', component: OurProjects },
-  { path: '/contact', name: 'Contact', component: Contact, 
-       meta: { hideCTA: true }       
+  {
+    path: '/contact', name: 'Contact', component: Contact,
+    meta: { hideCTA: true }
   },
   {
-      path : '/careers' , name : 'careers' , component : Careerspage,
-       meta: { hideCTA: true }
-  },
-   {
-      path : '/blog' , name : 'blog' , component : Latestblog,
-       meta: { hideCTA: true }
+    path: '/careers', name: 'careers', component: Careerspage,
+    meta: { hideCTA: true }
   },
   {
-     path : '/termcondition' , name : 'termcondition' , component : TermCondition,
-      meta : {hideCTA:true}
+    path: '/blog', name: 'blog', component: Latestblog,
+    meta: { hideCTA: true }
   },
-    {
-     path : '/privacy' , name : 'privacy' , component : Privacy,
-      meta : {hideCTA:true}
+
+  {
+    path: '/termcondition', name: 'termcondition', component: TermCondition,
+    meta: { hideCTA: true }
   },
   {
-     path : '/cookies' , name : 'cookies' , component : Cookies,
-      meta : {hideCTA:true}
+    path: '/privacy', name: 'privacy', component: Privacy,
+    meta: { hideCTA: true }
+  },
+  {
+    path: '/cookies', name: 'cookies', component: Cookies,
+    meta: { hideCTA: true }
   }
 ]
 

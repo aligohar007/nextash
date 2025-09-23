@@ -1,4 +1,3 @@
-// src/data/termsData.js
 export const termsData = [
     {
         type: "heading",
