@@ -148,7 +148,7 @@
         <img src="../assets/chaintusker.png" alt="chaintusker" class="w-32 sm:w-36 md:w-44 lg:w-52 xl:w-60 mx-auto" />
         <img src="../assets/saiotx_logo.jpg" alt="machinesens" class="w-32 sm:w-36 md:w-44 lg:w-52 xl:w-60 mx-auto" />
         <img src="../assets/ubunzulogo.png" alt="machinesens" class="w-32 sm:w-36 md:w-44 lg:w-52 xl:w-60 mx-auto" />
-        <img src="../assets/phalvc7e485.png" alt="machinesens" class="w-32 sm:w-36 md:w-44 lg:w-52 xl:w-60 mx-auto" />
+        <img src="../assets/phalvc7e485.png" alt="machinesens" class="w-32 sm:w-36 md:w-44 lg:w-52 xl:w-40 mx-auto" />
         <img src="../assets/azeem medical store.png" alt="machinesens"
           class="w-32 sm:w-36 md:w-44 lg:w-52 xl:w-60 mx-auto" />
 
