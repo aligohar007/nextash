@@ -1,4 +1,3 @@
-// src/data/footerData.js
 export const footerLinks = {
   information: [
     { label: "About us", href: "/about-us/" },
