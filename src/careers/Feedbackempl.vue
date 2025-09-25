@@ -10,6 +10,7 @@
             What Our Employees Say About <br /> Us?
         </h2>
     </div>
+
     <div class="design">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
             xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="0.21">
@@ -131,7 +132,7 @@
     <div class="w-[90%] mx-auto text-white relative overflow-hidden ">
         <!-- Slider wrapper -->
         <div class="flex transition-transform duration-400 ease-in-out "
-            :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+            :style="{ transform: `translateX(-${currentIndex * 100}%)`}">
             <!-- Single Card -->
             <div v-for="(item, index) in testimonials" :key="index"
                 class="min-w-full flex-shrink-0 p-8 border border-gray-700 rounded-xl text-center card">
@@ -238,16 +239,13 @@ const testimonials = ref([
 ])
 
 const currentIndex = ref(0)
-
 const nextSlide = () => {
-    currentIndex.value = (currentIndex.value + 1) % testimonials.value.length
+    currentIndex.value = (currentIndex.value - 1 + testimonials.value.length) % testimonials.value.length;
+}
+const prevSlide = () => {
+    currentIndex.value = (currentIndex.value + 1) % testimonials.value.length;
 }
 
-const prevSlide = () => {
-    currentIndex.value =
-        (currentIndex.value - 1 + testimonials.value.length) %
-        testimonials.value.length
-}
 </script>
 
 
